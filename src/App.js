@@ -1,24 +1,20 @@
-import './App.css';
-import BlogPage from './components/BlogPage';
-import Header from './components/Header';
-import HomePage from './components/HomePage';
+// import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Profile from './components/Profile';
+import HomePage from './components/HomePage';
 import Skill from './components/Skill';
 import Works from './components/Works';
+import TimeMe from './components/TimeMe';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
-        <Profile />
-        <Skill />
-        <Works />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/skills" element={<Skill />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/TimeMe" element={<TimeMe />} />
         </Routes>
       </div>
     </Router>

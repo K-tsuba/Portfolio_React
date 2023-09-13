@@ -1,24 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
+import '../App.css';
+import { Modal } from 'react-bootstrap';
 
 const Profile = () => {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div>
-      <h1>PROFILE</h1>
-      <img src="./logo192.png" width="200" height="200" />
-      <p>
-         こんにちは。○○と申します。
+    <div className='row py-5'>
+      
+      <div className="col-12">
+          <h1 className=''>PROFILE</h1>
+      </div>
 
-         求職者支援訓練の「○○科」を卒業後、メディア企業のデザイン部にて、Webデザイナーとして、バナーやメディアサイトのデザインとコーディングを約1年経験し、また記者として記事の執筆もいたしました。
-         その後、Web制作会社にて約2年間勤務し、CS放送局の特集ページやメルマガのデザイン・コーディングを担当。
-         現在はフリーランスとして、デザイン・コーディング・WordPressサイト構築をメインに活動しております。
-         また、「ねこポッポ」という名前でねこのマンガやLINEスタンプを作っておりました。
+      <div className="col-lg-4 col-md-12 col-xs-12 col-12 pt-5">
+        <div className='d-flex justify-content-center align-items-center h-100'>
+          <img src="./logo192.png" alt="プロフィール写真" onClick={handleShow} />
+        </div>
+      </div>
 
-         資格は、ウェブ解析士、GAIQ、色彩検定2級、TOEIC900点を保持。
-         「○○」優勝
-         34歳独身。東京の高田の馬場在住。上智大学文学部哲学学科卒業。ネコとK-popが大好き。最近、大好きな新大久保を歩いてたら「月曜から夜更かしに」少しだけでれました。その模様はプロフィール画像をクリックしてぜひ動画をご覧ください。
+      <Modal size="lg" show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body className='text-center'>
+          <img src="/skills_img/aws.png" alt="プロフィール写真" style={{ width: '80%' }} />
+        </Modal.Body>
+      </Modal>
 
-         デザイン・コーディング・WordPress・アクセス解析・ライティングなど、Web領域の全般に対応できるのが私の強みです。
-      </p>
+      <div className="col-lg-8 col-md-12 col-xs-12 col-12 pt-5">
+        <p>こんにちは。椿康平と申します。</p>
+        <div>大学在学中にオンラインプログラミングスクール「CodeCamp」を卒業。</div>
+        <p>スクールではWeb制作のコースを受講し、フロントエンド言語はJavascriptを学習し、バックエンド言語はphpを学習しました。</p>
+        <p>その後は、フレームワーク言語の学習やアプリの作成などを通して、プログラミングが好きになり、現在はエンジニアとして働いています。</p>
+        <p>資格は、TOEIC625点を保持。</p>
+        <p>工学院大学建築学部卒業。趣味は、海外ドラマや映画を見ることが好き。最近はボルタリングにはまっています。</p>
+        <div>普段からコードを書いていることからロジカルに考えることには長けていると思うので、問題解決能力は高いと思います。コーディングやデザインスキルを用いて、問題を一緒に解決することができるのが私の強みです。</div>
+      </div>
     </div>
   )
 }

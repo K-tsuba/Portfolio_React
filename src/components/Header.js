@@ -1,25 +1,24 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Navbar, Nav } from 'react-bootstrap';
 
 const Header = () => {
-  return <header>
-    <div className='logo'>
-      <h3>PORTFOLIO</h3>
-    </div>
-
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">HOME</Link>
-        </li>
-        <li>
-          <Link to="/blog">BLOG</Link>
-        </li>
-        <li>
-          <a href="#">SNS</a>
-        </li>
-      </ul>
-    </nav>
+  return <header className='sticky-top'>
+    <Navbar collapseOnSelect expand="lg">
+        <Navbar.Brand href="/">
+          <div>
+            <div className='circle'>K.T</div>
+          </div>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">HOME</Nav.Link>
+            <Nav.Link href="/skills">SKILLS</Nav.Link>
+            <Nav.Link href="/works">WORKS</Nav.Link>
+            <Nav.Link href="/contact">CONTACT</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+    </Navbar >
   </header>
 }
 
