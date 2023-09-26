@@ -1,3 +1,5 @@
+/* header */
+
 /* headerのバックの背景色と固定 */
 .header-back {
   position: fixed; 
@@ -7,6 +9,7 @@
   height: 66px;
   background-color: #DDE6ED; 
   padding: 10px 0; 
+  z-index: 100;
 }
 
 /* headerのロゴの所 */
@@ -20,19 +23,153 @@
   text-align: center;
 }
 
-/* skillのタイトルの下線 */
-.skill-border {
-  border-bottom: 1px solid #526D82;
-  width: 70px;
-  margin: auto;
-  padding: 5px 0;
+/* headerのcontact */
+.contact {
+  /* リンクのスタイルを設定 */
+  color: #000000A6; /* リンクのテキストカラー */
+  text-decoration: none; /* リンクの下線を削除 */
+  padding-top: 8px;
+  padding-left: 3px;
+
+  /* オプション: マウスホバー時のスタイル */
+  &:hover {
+    color: rgba(0, 0, 0, 0.8); /* 黒色の透明度が0.8の色 */
+    text-decoration: none; /* ホバー時の下線 */
+    cursor: pointer;
+  }
 }
+
+/* ハンバーガーメニュー設定 */
+
+/* 一つ目のリンクに異なるスタイルを適用 */
+.navbar-collapse.show .nav-link:first-child {
+  border-bottom: 2px solid #27374D; /* 下線のスタイルと色を設定 */
+  padding-top: 20px; /* 下線の高さを調整（必要に応じて） */
+  padding-bottom: 15px;
+}
+/* ハンバーガーメニューがアクティブなときのナビゲーション項目に下線を適用 */
+.navbar-collapse.show .nav-link, .navbar-collapse.show .contact {
+  border-bottom: 2px solid #27374D; /* 下線のスタイルと色を設定 */
+  padding: 15px 0; /* 下線の高さを調整（必要に応じて） */
+}
+/* ナビゲーション項目のホバースタイル（ホバー時に下線を強調） */
+.navbar-collapse.show .nav-link:hover, .navbar-collapse.show .contact:hover {
+  border-bottom: 3px solid #27374D; /* ホバー時の下線スタイルと色を設定 */
+}
+
+
+/* すべて */
+
+/* タイトルの下線 */
+.title-border {
+  position: relative;
+	text-align: center;
+}
+.title-border::before {
+  content: '';
+  position: absolute;
+	left: 50%;
+	bottom: 0;
+	border-bottom: 1px solid #526D82;
+	transform: translateX(-50%);
+	animation: border_anim 2s linear forwards;
+}
+@keyframes border_anim {
+	0%{
+		width: 30%;
+	}
+	100%{
+		width: 50px;
+	}
+}
+
+
+/* works */
+
+/* works 作品ページ */
+.work-link-box {
+  position: relative;
+}
+.work-link-box:hover .work-word {
+  display: inline;
+  animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+.work-word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font: bold;
+  color: white;
+  display: none;
+  padding: 30px 50px;
+  background-color: rgba(82, 109, 130, 0.5);
+  opacity: 0; /* 最初は透明 */
+}
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+
+/* work ここの作品ページ */
+
+/* 連絡先の画像と制作物の小さい画像 */
+.contact-img, .work-img {
+  transition-duration: 0.5s; /*変化の時間*/
+}
+.contact-img:hover, .work-img:hover {
+  transform: scale(1.1,1.1); /*画像の拡大*/
+  cursor: pointer; /*カーソルをポインターにする*/
+}
+
+
+/* skill */
+
+/* skillの言語のフォントサイズ */
+.language {
+  font-size: 20px;
+}
+/* skillの文章の背景 */
+.skill-box {
+  background-color: #DDE6ED;
+  box-shadow: 0 0 10px 10px #DDE6ED; /* 影 */
+}
+
+
+/* profile */
+
+/* 例: 1番目の列のtd要素の幅を調整 */
+table tr td:nth-child(1) {
+  width: 30%; 
+}
+/* 例: 2番目の列のtd要素の幅を調整 */
+table tr td:nth-child(2) {
+  width: 70%;
+}
+
+
 
 /* 画面を1画面で見る時 */
 @media screen and (min-width: 900px) {
   /* 全ページの幅を調整 */
   .custom-container {
     margin: 0 80px;
+  }
+
+  .profile-width {
+    margin: 0 18%;
+  }
+
+  .contact-width {
+    margin: 0 30%;
   }
 
   /* 成果物のメイン画像 */
@@ -54,6 +191,7 @@
     width: 550px;
   }
 
+  /* 作品の詳細説明の幅 */
   .work-width {
     margin: 0 5%;
   }

@@ -2,18 +2,21 @@ import React, { useState } from 'react'
 import Header from './Header';
 import '../App.css';
 
-const QuizGame = () => {
-
-  const [mainImage, setMainImage] = useState('archiquiz_5.png');
+const Kagoyume = () => {
+  
+  const [mainImage, setMainImage] = useState('kagoyume_9.jpg');
 
   const images = [
-    'archiquiz_1.png',
-    'archiquiz_2.png',
-    'archiquiz_3.png',
-    'archiquiz_4.png',
-    'archiquiz_5.png',
-    'archiquiz_6.png',
-    'archiquiz_7.png'
+    'kagoyume_1.jpg',
+    'kagoyume_2.jpg',
+    'kagoyume_3.jpg',
+    'kagoyume_4.jpg',
+    'kagoyume_5.jpg',
+    'kagoyume_6.jpg',
+    'kagoyume_7.jpg',
+    'kagoyume_8.jpg',
+    'kagoyume_9.jpg',
+    'kagoyume_10.jpg',
   ];
 
   const handleImageClick = (image) => {
@@ -28,19 +31,19 @@ const QuizGame = () => {
           <Header />
           <div className='row py-5'>
             <div className="col-12">
-              <h1 className='border-bottom border-3' style={{ padding: '20px' }}>ArchiQuiz</h1>
-              <h5 className='text-center my-5'>「建築環境や設備分野についてクイズ形式で学習できるアプリケーション」</h5>
+              <h1 className='border-bottom border-3' style={{ padding: '20px' }}>Kagoyume</h1>
+              <h5 className='text-center my-5'>「」</h5>
             </div>
 
             <div className="col-12">
               <div className='text-center'>
-                <img src={`/archiquiz_img/${mainImage || 'default.png'}`} alt="main_img" className='border border-2 main-img'></img>
+                <img src={`/kagoyume_img/${mainImage || 'default.jpg'}`} alt="Kagoyume" className='border border-2 main-img'></img>
               </div>
 
               <div className="d-flex flex-wrap mt-2">
                 {images.map((image, index) => (
                   <div key={index} className="m-2">
-                    <img src={`/archiquiz_img/${image}`} alt={`archiquiz_${index + 1}`} onClick={() => handleImageClick(image)} className='work-img' style={{ height: '80px', width: '100px' }}></img>
+                    <img src={`/kagoyume_img/${image}`} alt={`kagoyume_${index + 1}`} onClick={() => handleImageClick(image)} className='work-img' style={{ height: '80px', width: '100px' }}></img>
                   </div>
                 ))}
               </div>
@@ -48,8 +51,8 @@ const QuizGame = () => {
 
             <div className='mt-5'>
               GitHub URL 
-              <a href='https://github.com/K-tsuba/chat-app' target='_blank' rel='noopener noreferrer' className='ms-2'>
-              https://github.com/K-tsuba/chat-app
+              <a href='https://github.com/K-tsuba/Kagoyume' target='_blank' rel='noopener noreferrer' className='ms-2'>
+              https://github.com/K-tsuba/Kagoyume
               </a>
             </div>
           </div>
@@ -58,12 +61,12 @@ const QuizGame = () => {
             <div className='row'>
               <div className='mt-5'>
                 <h4 className='mb-3'>アプリ概要</h4>
-                <div style={{ 'font-size': '18px' }}>世界問題の一つとして環境問題がある。多くの企業などが環境に負荷を与えないように対策を取り実行しているが、一人一人が意識して問題と向き合う必要があると考えている。そこで学校教育でも環境について学ぶ機会が増えたり、環境の教材があったりする。しかし、授業では面白く学べないだったり、既存のゲームにも普段できるようなことが学べないなどの問題があったため、ゲームを通して建築的観点から環境について学習できる。</div>
+                <div style={{ 'font-size': '18px' }}></div>
               </div>
               
               <div className='mt-5'>
                 <h4 className='mb-3'>使用技術</h4>
-                <div style={{ 'font-size': '18px' }}>HTML / CSS / Bootstrap / PHP / Laravel / Javascript</div>
+                <div style={{ 'font-size': '18px' }}>HTML / CSS / Bootstrap / Java</div>
               </div>
               
               <div className='mt-5'>
@@ -115,4 +118,4 @@ const QuizGame = () => {
   )
 }
 
-export default QuizGame
+export default Kagoyume

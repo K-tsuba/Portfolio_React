@@ -4,6 +4,7 @@ import Header from './Header';
 import '../App.css';
 
 const Works = () => {
+
   return (
     <div>
       <div className='header-back'></div>
@@ -11,54 +12,74 @@ const Works = () => {
         <div className='custom-container'>
           <Header />
           <div className='row py-5'>
-            <div className="col-12">
-              <h1>WORKS</h1>
+            <div className="col-12 text-center mb-4">
+              <h3 className='mt-4'>WORKS</h3>
+              <div className='title-border'></div>
             </div>
 
-            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-4">
+            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <Link to="/TimeMe">
-                  <img src="/timeme_img/timeme_3.png" alt="Logo" style={{ height: '150px', width: '180px' }} />
+                <Link to="/TimeMe" className='work-link-box'>
+                  <div className='work-word'>TimeMe</div>
+                  <img src="/timeme_img/timeme_4.png" alt="TimeMe" style={{ height: '150px', width: '250px' }} />
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
+              <div className='d-flex justify-content-center align-items-center h-100'>
+                <Link to="/ArchiQuiz" className='work-link-box'>
+                  <div className='work-word'>ArchiQuiz</div>
+                  <img src="/archiquiz_img/archiquiz_6.png" alt="ArchiQuiz" style={{ height: '150px', width: '250px' }} />
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
+              <div className='d-flex justify-content-center align-items-center h-100'>
+                <Link to="/Kagoyume" className='work-link-box'>
+                  <div className='work-word'>Kagoyume</div>
+                  <img src="/kagoyume_img/kagoyume_9.jpg" alt="Kagoyume" style={{ height: '150px', width: '250px' }} />
+                </Link>
+              </div>
+            </div>
+
+
+            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
+              <div className='d-flex justify-content-center align-items-center h-100'>
+                <Link to="/ArchiQuiz" className='work-link-box'>
+                  <img src="/archiquiz_img/archiquiz_6.png" alt="ArchiQuiz" style={{ height: '150px', width: '250px' }} />
+                  <div className='work-word'>Kagoyume</div>
+                </Link>
+              </div>
+            </div>
+
+            
+
+            
+
+            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
+              <div className='d-flex justify-content-center align-items-center h-100'>
+                <Link to="/Kagoyume" className='work-link'>
+                  <img src="/kagoyume_img/kagoyume_6.jpg" alt="Kagoyume" style={{ height: '150px', width: '250px' }} />
                 </Link>
               </div>
               <div className='text-center'>
-                <p>TimeMe</p>
+                <p>Kagoyume</p>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="./logo192.png" alt="プロフィール写真" style={{ height: '100px', width: '120px' }} />
+                <Link to="/TimeMe">
+                  <img src="/archiquiz_img/archiquiz_6.png" alt="TimeMe" style={{ height: '150px', width: '250px' }} />
+                </Link>
               </div>
               <div className='text-center'>
-                <p>Work 1</p>
+                <p>Portfolio</p>
               </div>
             </div>
-            
-            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
-              <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="./logo192.png" alt="プロフィール写真" style={{ height: '100px', width: '120px' }} />
-              </div>
-              <div className='text-center'>
-                <p>Work 1</p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
-              <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="./logo192.png" alt="プロフィール写真" style={{ height: '100px', width: '120px' }} />
-              </div>
-              <div className='text-center'>
-                <p>Work 1</p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
-              <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="./logo192.png" alt="プロフィール写真" style={{ height: '100px', width: '120px' }} />
-              </div>
-              <div className='text-center'>
-                <p>Work 1</p>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

@@ -43,7 +43,7 @@ const TimeMe = () => {
                 <div className="d-flex flex-wrap mt-2">
                   {images.map((image, index) => (
                     <div key={index} className="m-2">
-                      <img src={`/timeme_img/${image}`} alt={`timeme_${index + 1}`} onClick={() => handleImageClick(image)} className='second_img' style={{ height: '80px', width: '100px' }}></img>
+                      <img src={`/timeme_img/${image}`} alt={`timeme_${index + 1}`} onClick={() => handleImageClick(image)} className='work-img' style={{ height: '80px', width: '100px' }}></img>
                     </div>
                   ))}
                 </div>
@@ -66,7 +66,7 @@ const TimeMe = () => {
                 
                 <div className='mt-5'>
                   <h4 className='mb-3'>使用技術</h4>
-                  <div style={{ 'font-size': '18px' }}>PHP / Laravel / Javascript</div>
+                  <div style={{ 'font-size': '18px' }}>HTML / CSS / Bootstrap / PHP / Laravel / Javascript</div>
                 </div>
                 
                 <div className='mt-5'>
