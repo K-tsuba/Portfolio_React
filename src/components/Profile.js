@@ -19,14 +19,14 @@ const Profile = () => {
 
         <div className="col-lg-12 col-md-12 col-xs-12 col-12 pt-5">
           <div className='d-flex justify-content-center align-items-center h-100'>
-            <img src="/timeme_img/timeme_6.png" alt="プロフィール写真" onClick={handleShow} className="rounded-circle" style={{ width: '250px', height: '250px' }} />
+            <img src="profile_img.jpg" alt="プロフィール写真" onClick={handleShow} className="rounded-circle" style={{ width: '260px', height: '230px' }} />
           </div>
         </div>
 
         <Modal size="lg" show={show} onHide={handleClose} centered>
           <Modal.Header closeButton></Modal.Header>
           <Modal.Body className='text-center'>
-            <img src="/timeme_img/timeme_6.png" alt="プロフィール写真" className="rounded-circle" style={{ width: '350px', height: '350px' }} />
+            <img src="profile_img.jpg" alt="プロフィール写真" className="rounded-circle" style={{ width: '400px', height: '350px' }} />
           </Modal.Body>
         </Modal>
       </div>

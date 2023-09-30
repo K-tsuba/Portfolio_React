@@ -44,39 +44,12 @@ const Works = () => {
               </div>
             </div>
 
-
             <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <Link to="/ArchiQuiz" className='work-link-box'>
-                  <img src="/archiquiz_img/archiquiz_6.png" alt="ArchiQuiz" style={{ height: '150px', width: '250px' }} />
-                  <div className='work-word'>Kagoyume</div>
+                <Link to="/Portfolio" className='work-link-box'>
+                  <img src="/portfolio_img/portfolio_1.png" alt="Portfolio" style={{ height: '150px', width: '250px' }} />
+                  <div className='work-word'>Portfolio</div>
                 </Link>
-              </div>
-            </div>
-
-            
-
-            
-
-            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
-              <div className='d-flex justify-content-center align-items-center h-100'>
-                <Link to="/Kagoyume" className='work-link'>
-                  <img src="/kagoyume_img/kagoyume_6.jpg" alt="Kagoyume" style={{ height: '150px', width: '250px' }} />
-                </Link>
-              </div>
-              <div className='text-center'>
-                <p>Kagoyume</p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
-              <div className='d-flex justify-content-center align-items-center h-100'>
-                <Link to="/TimeMe">
-                  <img src="/archiquiz_img/archiquiz_6.png" alt="TimeMe" style={{ height: '150px', width: '250px' }} />
-                </Link>
-              </div>
-              <div className='text-center'>
-                <p>Portfolio</p>
               </div>
             </div>
 

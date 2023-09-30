@@ -40,7 +40,7 @@ const Skill = () => {
 
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="../skills_img/java.png" alt="java" width="80" height="80" />
+                <img src="../skills_img/java.png" alt="java" width="120" height="100" />
               </div>
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
@@ -51,7 +51,7 @@ const Skill = () => {
 
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="../skills_img/javascript.png" alt="javascript" width="80" height="80" />
+                <img src="../skills_img/javascript.png" alt="javascript" width="150" height="100" />
               </div>
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
@@ -95,7 +95,7 @@ const Skill = () => {
 
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="../skills_img/css.png" alt="css" width="80" height="80" />
+                <img src="../skills_img/css.png" alt="css" width="60" height="80" />
               </div>
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
@@ -106,7 +106,7 @@ const Skill = () => {
 
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="../skills_img/bootstrap.jpg" alt="bootstrap" width="80" height="80" />
+                <img src="../skills_img/bootstrap.jpg" alt="bootstrap" width="70" height="70" />
               </div>
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
@@ -121,7 +121,7 @@ const Skill = () => {
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="../skills_img/aws.png" alt="aws" width="80" height="80" />
+                <img src="../skills_img/aws.png" alt="aws" width="90" height="70" />
               </div>
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
@@ -169,7 +169,7 @@ const Skill = () => {
 
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="../skills_img/eclipse.png" alt="eclipse" width="80" height="80" />
+                <img src="../skills_img/eclipse.png" alt="eclipse" width="100" height="70" />
               </div>
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
@@ -184,7 +184,7 @@ const Skill = () => {
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4">
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src="../skills_img/canva.jpg" alt="canva" width="80" height="80" />
+                <img src="../skills_img/canva.jpg" alt="canva" width="90" height="70" />
               </div>
             </div>
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
