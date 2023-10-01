@@ -195,6 +195,12 @@ table tr td:nth-child(2) {
   .work-width {
     margin: 0 5%;
   }
+
+  /* 連絡先のアイコン大きさ */
+  .contact-img {
+    height: 60px;
+    width: 55px;
+  }
 }
 
 /* 画面がスマホくらいの幅の時 */

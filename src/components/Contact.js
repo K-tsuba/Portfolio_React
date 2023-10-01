@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css';
-import { Link } from 'react-router-dom';
 import { Element } from 'react-scroll';
 
 const Contact = () => {
@@ -19,25 +18,18 @@ const Contact = () => {
           <div className="col-12 text-center mb-2">
             <p className='mt-4'>～  お気軽にお問い合わせください  ～</p>
           </div>
-          <div className="col-lg-4 col-md-4 col-xs-4 my-4">
+          <div className="col-lg-6 col-md-4 col-xs-4 my-4">
             <div className='d-flex justify-content-center align-items-center h-100'>
-              <Link to="/TimeMe">
-                <img src="/contact_img/Instagram.jpg" alt="TimeMe" className='contact-img' style={{ height: '70px', width: '65px' }} />
-              </Link>
+              <a href='https://www.instagram.com/kou_tt_0101/' target="_blank" rel="noreferrer">
+                <img src="/contact_img/Instagram.jpg" alt="TimeMe" className='contact-img' style={{ height: '60px', width: '55px' }} />
+              </a>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 col-xs-4 my-4">
+          <div className="col-lg-6 col-md-4 col-xs-4 my-4">
             <div className='d-flex justify-content-center align-items-center h-100'>
-              <Link to="/TimeMe">
-                <img src="/contact_img/Twitter.png" alt="TimeMe" className='contact-img rounded' style={{ height: '60px', width: '60px' }} />
-              </Link>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-xs-4 my-4">
-            <div className='d-flex justify-content-center align-items-center h-100'>
-              <Link to="/TimeMe">
-                <img src="/contact_img/Gmail.png" alt="TimeMe" className='contact-img rounded' style={{ height: '60px', width: '60px' }} />
-              </Link>
+              <a href='https://twitter.com/KouKou39096839' target="_blank" rel="noreferrer">
+                <img src="/contact_img/Twitter.png" alt="TimeMe" className='contact-img rounded' style={{ height: '50px', width: '50px' }} />
+              </a>
             </div>
           </div>
         </div>
