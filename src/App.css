@@ -205,6 +205,11 @@ table tr td:nth-child(2) {
 
 /* 画面がスマホくらいの幅の時 */
 @media screen and (max-width: 575px) {
+  /* 画面の幅を調整 */
+  .custom-container {
+    margin: 0 30px;
+  }
+
   .main-img {
     height: 200px;
     width: 350px;

@@ -21,11 +21,16 @@ const Skill = () => {
                 <img src="../skills_img/php.png" alt="php" width="80" height="80" />
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
-              <div className='language'>PHP</div>
-              <div className=''>2年</div>
-              <div className=''>スクールでPHPは学習し、2チャンネルの簡易版メッセージアプリや在庫管理ツールなどをPHPを使って作成しました。他にはPaizaの練習問題をPHPで解いていた時期もあり、Bレベルは問題なくできます。</div>
-            </div>
+
+
+            {/* <div className='skill-box-margin'> */}
+              <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4 skill-box">
+                <div className='language'>PHP</div>
+                <div className=''>2年</div>
+                <div className=''>スクールでPHPは学習し、2チャンネルの簡易版メッセージアプリや在庫管理ツールなどをPHPを使って作成しました。他にはPaizaの練習問題をPHPで解いていた時期もあり、Bレベルは問題なくできます。</div>
+              </div>
+            {/* </div> */}
+            
             
             <div className="col-lg-3 col-md-12 col-xs-12 col-12 my-4">
               <div className='d-flex justify-content-center align-items-center h-100'>
