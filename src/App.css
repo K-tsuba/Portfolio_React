@@ -142,8 +142,12 @@
 }
 /* skillの文章の背景 */
 .skill-box {
-  background-color: #DDE6ED;
+  background-color: white;
   box-shadow: 0 0 10px 10px #DDE6ED; /* 影 */
+}
+/* skillの文章の下線 */
+.skill-explanation {
+  text-decoration: underline;
 }
 
 
