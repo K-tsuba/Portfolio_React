@@ -185,6 +185,18 @@ table tr td:nth-child(2) {
     width: 700px;
   }
 
+  /* Twitter Header 画像 */
+  .twitter-header-img {
+    height: 250px;
+    width: 600px;
+  }
+
+  /* Web Site 制作 画像 */
+  .web-site-make-img {
+    height: 400px;
+    width: 500px;
+  }
+
   /* 成果物の詳細の部分の幅調整 */
   .work-width {
     margin: 0 18%;
@@ -193,9 +205,22 @@ table tr td:nth-child(2) {
 
 /* 画面が半分の時 */
 @media screen and (min-width: 576px) and (max-width: 991px) {
+  /* 成果物のメイン画像 */
   .main-img {
     height: 300px;
     width: 550px;
+  }
+
+  /* Twitter Header 画像 */
+  .twitter-header-img {
+    height: 150px;
+    width: 400px;
+  }
+
+  /* Web Site 制作 画像 */
+  .web-site-make-img {
+    height: 300px;
+    width: 400px;
   }
 
   /* 作品の詳細説明の幅 */
@@ -217,9 +242,22 @@ table tr td:nth-child(2) {
     margin: 0 30px;
   }
 
+  /* 成果物のメイン画像 */
   .main-img {
     height: 170px;
     width: 300px;
+  }
+
+  /* Twitter Header 画像 */
+  .twitter-header-img {
+    height: 100px;
+    width: 300px;
+  }
+
+  /* Web Site 制作 画像 */
+  .web-site-make-img {
+    height: 200px;
+    width: 280px;
   }
 }
 

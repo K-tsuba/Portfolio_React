@@ -32,14 +32,12 @@ const TimeMe = () => {
             <div className='row py-5'>
               <div className="col-12">
                 <h1 className='border-bottom border-3' style={{ padding: '20px' }}>TimeMe</h1>
-                <h5 className='text-center my-5'>「学習時間を計測し、学習のモチベーションの維持向上を図るアプリケーション」</h5>
+                <div className='text-center my-5' style={{ 'font-size': '25px' }}>「学習時間を計測し、学習のモチベーションの維持向上を図るアプリケーション」</div>
               </div>
-
               <div className="col-12">
                 <div className='text-center'>
                   <img src={`/timeme_img/${mainImage || 'default.jpg'}`} alt="main_img" className='border border-2 main-img'></img>
                 </div>
-
                 <div className="d-flex flex-wrap mt-2">
                   {images.map((image, index) => (
                     <div key={index} className="m-2">
@@ -48,7 +46,6 @@ const TimeMe = () => {
                   ))}
                 </div>
               </div>
-
               <div className='mt-5'>
                 GitHub URL 
                 <a href='https://github.com/K-tsuba/TimeMe' target='_blank' rel='noopener noreferrer' className='ms-2'>
@@ -56,19 +53,16 @@ const TimeMe = () => {
                 </a>
               </div>
             </div>
-
-            <div className='work-width'>
+            <div className='work-width mb-5'>
               <div className='row'>
                 <div className='mt-5'>
                   <h4 className='mb-3'>アプリ概要</h4>
                   <div style={{ 'font-size': '18px' }}>コロナによりオンライン学習が発展し、webサイトなどで気軽に学習できる教材が増えています。しかしオンラインで一人で学習するのも難しいと思う方が多いと思います。そこで学習時間を計測することで1日にどれくらい学習しているを把握でき、予定を立てることに繋がったり、学習時間の可視化によりモチベーションを保つことができます。</div>
                 </div>
-                
                 <div className='mt-5'>
                   <h4 className='mb-3'>使用技術</h4>
                   <div style={{ 'font-size': '18px' }}>HTML / CSS / Bootstrap / PHP / Laravel / Javascript</div>
                 </div>
-                
                 <div className='mt-5'>
                   <h4 className='mb-3'>主な機能</h4>
                   <ul style={{ 'font-size': '18px' }}>
@@ -106,7 +100,6 @@ const TimeMe = () => {
                     </li>
                   </ul>
                 </div>
-
                 <div className='mt-5'>
                   <h4 className='mb-3'>工夫ポイント</h4>
                   <p className='border-bottom border-dark' style={{ 'font-size': '18px' }}>時間表示設計</p>
@@ -114,7 +107,6 @@ const TimeMe = () => {
                   <p className='border-bottom border-dark' style={{ 'font-size': '18px' }}>コードの肥大化解消</p>
                   <p style={{ 'font-size': '18px' }}>コード面ではControllerの肥大化するのをうまくModelを使ってコードを分かりやすいように書くことをこだわりました。最初は1週間分や1カ月分など一つ一つ丁寧に書いていたのでControllerが肥大化してしまいました。しかし、データを取得するときに範囲が異なるだけで足し方は一緒な所があったりしたのでそういったところをModelで関数にまとめControllerの肥大化を解消しました。</p>
                 </div>
-
                 <div className='my-5'>
                   <h4 className='mb-3'>苦労したポイント</h4>
                   <p className='border-bottom border-dark' style={{ 'font-size': '18px' }}>計測設計</p>

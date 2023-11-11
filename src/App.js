@@ -8,7 +8,10 @@ import QuizGame from './components/QuizGame';
 import Contact from './components/Contact';
 import Kagoyume from './components/Kagoyume';
 import Portfolio from './components/Portfolio';
-
+import TwitterHeader from './components/TwitterHeader';
+import WebSiteMake from './components/WebSiteMake';
+import LogoMake from './components/LogoMake';
+import BannerAdvertisement from './components/BannerAdvertisement';
 
 function App() {
   return (
@@ -22,7 +25,11 @@ function App() {
           <Route path="/TimeMe" element={<TimeMe />} />
           <Route path="/ArchiQuiz" element={<QuizGame />} />
           <Route path="/Kagoyume" element={<Kagoyume />} />
+          <Route path="/TwitterHeader" element={<TwitterHeader />} />
+          <Route path="/WebSiteMake" element={<WebSiteMake />} />
+          <Route path="/LogoMake" element={<LogoMake />} />
           <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/BannerAdvertisement" element={<BannerAdvertisement />} />
         </Routes>
       </div>
     </Router>
