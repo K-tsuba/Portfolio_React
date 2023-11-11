@@ -29,14 +29,12 @@ const QuizGame = () => {
           <div className='row py-5'>
             <div className="col-12">
               <h1 className='border-bottom border-3' style={{ padding: '20px' }}>ArchiQuiz</h1>
-              <h5 className='text-center my-5'>「建築環境や設備分野についてクイズ形式で学習できるアプリケーション」</h5>
+              <div className='text-center my-5' style={{ 'font-size': '25px' }}>「建築環境や設備分野についてクイズ形式で学習できるアプリケーション」</div>
             </div>
-
             <div className="col-12">
               <div className='text-center'>
                 <img src={`/archiquiz_img/${mainImage || 'default.png'}`} alt="main_img" className='border border-2 main-img'></img>
               </div>
-
               <div className="d-flex flex-wrap mt-2">
                 {images.map((image, index) => (
                   <div key={index} className="m-2">
@@ -45,7 +43,6 @@ const QuizGame = () => {
                 ))}
               </div>
             </div>
-
             <div className='mt-5'>
               GitHub URL 
               <a href='https://github.com/K-tsuba/chat-app' target='_blank' rel='noopener noreferrer' className='ms-2'>
@@ -53,19 +50,16 @@ const QuizGame = () => {
               </a>
             </div>
           </div>
-
-          <div className='work-width'>
+          <div className='work-width mb-5'>
             <div className='row'>
               <div className='mt-5'>
                 <h4 className='mb-3'>アプリ概要</h4>
                 <div style={{ 'font-size': '18px' }}>世界問題の一つとして環境問題がある。多くの企業などが環境に負荷を与えないように対策を取り実行しているが、一人一人が意識して問題と向き合う必要があると考えている。そこで学校教育でも環境について学ぶ機会が増えたり、環境の教材があったりする。しかし、授業では面白く学べないだったり、既存のゲームにも普段できるようなことが学べないなどの問題があったため、ゲームを通して建築的観点から環境について学習できる。</div>
               </div>
-              
               <div className='mt-5'>
                 <h4 className='mb-3'>使用技術</h4>
                 <div style={{ 'font-size': '18px' }}>HTML / CSS / Bootstrap / PHP / Laravel / Javascript</div>
-              </div>
-              
+              </div>   
               <div className='mt-5'>
                 <h4 className='mb-3'>主な機能</h4>
                 <ul style={{ 'font-size': '18px' }}>
@@ -95,7 +89,6 @@ const QuizGame = () => {
                   </li>
                 </ul>
               </div>
-
               <div className='mt-5'>
                 <h4 className='mb-3'>工夫ポイント</h4>
                 <p className='border-bottom border-dark' style={{ 'font-size': '18px' }}>web socketを使用して同時リアルタイムのゲーム対戦設計</p>
@@ -103,7 +96,6 @@ const QuizGame = () => {
                 <p className='border-bottom border-dark' style={{ 'font-size': '18px' }}>質問を投げる戦略型クイズ形式</p>
                 <p style={{ 'font-size': '18px' }}>普通のクイズ形式のゲームは質問が出されてお互いに質問に答えていくゲームが一般的でした。しかし、相手に質問を投げることができる処理を挟むことで質問に答えるだけにならないので、より理解しようと努めるようにしました。また、相手の弱点なども理解できるようになるとゲームを有利に進めることができるところが面白いポイントです。</p>
               </div>
-
               <div className='my-5'>
                 <h4 className='mb-3'>苦労したポイント</h4>
                 <p className='border-bottom border-dark' style={{ 'font-size': '18px' }}>同時に入室するときの設計</p>

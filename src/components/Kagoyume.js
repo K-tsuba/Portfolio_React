@@ -32,14 +32,12 @@ const Kagoyume = () => {
           <div className='row py-5'>
             <div className="col-12">
               <h1 className='border-bottom border-3' style={{ padding: '20px' }}>Kagoyume</h1>
-              <h5 className='text-center my-5'>「フラストレーションなく楽しめる仮想世界でのショッピングアプリ」</h5>
+              <div className='text-center my-5' style={{ 'font-size': '25px' }}>「フラストレーションなく楽しめる仮想世界でのショッピングアプリ」</div>
             </div>
-
             <div className="col-12">
               <div className='text-center'>
                 <img src={`/kagoyume_img/${mainImage || 'default.jpg'}`} alt="Kagoyume" className='border border-2 main-img'></img>
               </div>
-
               <div className="d-flex flex-wrap mt-2">
                 {images.map((image, index) => (
                   <div key={index} className="m-2">
@@ -48,7 +46,6 @@ const Kagoyume = () => {
                 ))}
               </div>
             </div>
-
             <div className='mt-5'>
               GitHub URL 
               <a href='https://github.com/K-tsuba/Kagoyume' target='_blank' rel='noopener noreferrer' className='ms-2'>
@@ -56,19 +53,16 @@ const Kagoyume = () => {
               </a>
             </div>
           </div>
-
-          <div className='work-width'>
+          <div className='work-width mb-5'>
             <div className='row'>
               <div className='mt-5'>
                 <h4 className='mb-3'>アプリ概要</h4>
                 <div style={{ 'font-size': '18px' }}>オンラインショッピングが普及するようになり、オンラインでも買い物を楽しめるようになりました。しかし、欲しい商品が多くて、ついつい商品カートに追加して、後で合計金額をみて悩むことが多いと思います。そんなストレスを解消することができます。</div>
               </div>
-              
               <div className='mt-5'>
                 <h4 className='mb-3'>使用技術</h4>
                 <div style={{ 'font-size': '18px' }}>HTML / CSS / Bootstrap / Java</div>
-              </div>
-              
+              </div> 
               <div className='mt-5'>
                 <h4 className='mb-3'>主な機能</h4>
                 <ul style={{ 'font-size': '18px' }}>
@@ -90,13 +84,11 @@ const Kagoyume = () => {
                   </li>
                 </ul>
               </div>
-
               <div className='mt-5'>
                 <h4 className='mb-3'>工夫ポイント</h4>
                 <p className='border-bottom border-dark' style={{ 'font-size': '18px' }}>DAOやDTO, Beanを使用してコードを設計</p>
                 <p style={{ 'font-size': '18px' }}>最初はそれぞれの概念を理解することが大変だったのですが、フレームワークで言うMVC構造のようにJavaでもDAOやDTOなどを使用することでコードを簡略化して書くことができました。データベースからデータを取得して表示をするときやデータをデータベースに格納するときに使いまわしすることも可能なのでその分のコード量など減らせるように工夫しました。</p>
               </div>
-
               <div className='my-5'>
                 <h4 className='mb-3'>苦労したポイント</h4>
                 <p className='border-bottom border-dark' style={{ 'font-size': '18px' }}>yahooのapiと連携してデータを取得すること</p>
