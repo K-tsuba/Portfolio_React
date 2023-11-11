@@ -28,8 +28,8 @@ function App() {
           <Route path="/TwitterHeader" element={<TwitterHeader />} />
           <Route path="/WebSiteMake" element={<WebSiteMake />} />
           <Route path="/LogoMake" element={<LogoMake />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/BannerAdvertisement" element={<BannerAdvertisement />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
         </Routes>
       </div>
     </Router>
