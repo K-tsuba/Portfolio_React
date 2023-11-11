@@ -179,6 +179,12 @@ table tr td:nth-child(2) {
     margin: 0 30%;
   }
 
+  /* プロフィール画像 */
+  .profile-img {
+    height: 350px;
+    width: 400px;
+  }
+
   /* 成果物のメイン画像 */
   .main-img {
     height: 400px;
@@ -240,6 +246,12 @@ table tr td:nth-child(2) {
   /* 画面の幅を調整 */
   .custom-container {
     margin: 0 30px;
+  }
+
+  /* プロフィール画像 */
+  .profile-img {
+    height: 250px;
+    width: 200px;
   }
 
   /* 成果物のメイン画像 */

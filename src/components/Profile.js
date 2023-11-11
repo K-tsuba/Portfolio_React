@@ -16,25 +16,22 @@ const Profile = () => {
           <h3 className='mt-4'>PROFILE</h3>
           <div className='title-border'></div>
         </div>
-
         <div className="col-lg-12 col-md-12 col-xs-12 col-12 pt-5">
           <div className='d-flex justify-content-center align-items-center h-100'>
             <img src="profile_img.jpg" alt="プロフィール写真" onClick={handleShow} className="rounded-circle" style={{ width: '260px', height: '230px' }} />
           </div>
         </div>
-
         <Modal size="lg" show={show} onHide={handleClose} centered>
           <Modal.Header closeButton></Modal.Header>
           <Modal.Body className='text-center'>
-            <img src="profile_img.jpg" alt="プロフィール写真" className="rounded-circle" style={{ width: '400px', height: '350px' }} />
+            <img src="profile_img.jpg" alt="プロフィール写真" className="rounded-circle profile-img" style={{ width: '400px', height: '350px' }} />
           </Modal.Body>
         </Modal>
       </div>
-
       <div className='work-width py-5'>
         <div className='row'>
           <div className="col-lg-12 col-md-12 col-xs-12 col-12">
-            <p>こんにちは。椿康平と申します。1999年6月22日生まれ。</p>
+            <p>こんにちは。椿康平です。1999年6月22日生まれ。</p>
             <div>大学在学中にオンラインプログラミングスクール「CodeCamp」を卒業。</div>
             <p>スクールではWeb制作のコースを受講し、フロントエンド言語はJavascriptを学習し、バックエンド言語はphpを学習しました。</p>
             <p>その後は、フレームワーク言語の学習やアプリの作成などを通して、プログラミングが好きになり、現在はエンジニアとして働いています。</p>
