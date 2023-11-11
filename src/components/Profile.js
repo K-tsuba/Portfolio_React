@@ -24,7 +24,7 @@ const Profile = () => {
         <Modal size="lg" show={show} onHide={handleClose} centered>
           <Modal.Header closeButton></Modal.Header>
           <Modal.Body className='text-center'>
-            <img src="profile_img.jpg" alt="プロフィール写真" className="rounded-circle profile-img" style={{ width: '400px', height: '350px' }} />
+            <img src="profile_img.jpg" alt="プロフィール写真" className="rounded-circle profile-img" />
           </Modal.Body>
         </Modal>
       </div>

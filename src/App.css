@@ -250,8 +250,8 @@ table tr td:nth-child(2) {
 
   /* プロフィール画像 */
   .profile-img {
-    height: 150px;
-    width: 100px;
+    height: 250px;
+    width: 250px;
   }
 
   /* 成果物のメイン画像 */
