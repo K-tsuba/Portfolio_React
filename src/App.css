@@ -99,11 +99,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 50px;
   font: bold;
   color: white;
   display: none;
-  padding: 30px 50px;
+  padding: 15% 10%;
   background-color: rgba(82, 109, 130, 0.5);
   opacity: 0; /* 最初は透明 */
 }
