@@ -4,17 +4,17 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 
 const applicationLinks = [
-  { to: '/TimeMe', label: 'TimeMe', imgSrc: '/timeme_img/timeme_4.png', style: { height: '150px', width: '250px' } },
-  { to: '/ArchiQuiz', label: 'ArchiQuiz', imgSrc: '/archiquiz_img/archiquiz_6.png', style: { height: '150px', width: '250px' } },
-  { to: '/Kagoyume', label: 'Kagoyume', imgSrc: '/kagoyume_img/kagoyume_9.jpg', style: { height: '150px', width: '250px' } },
-  { to: '/Portfolio', label: 'Portfolio', imgSrc: '/portfolio_img/portfolio_1.png', style: { height: '150px', width: '250px' } },
+  { to: '/TimeMe', label: 'TimeMe', imgSrc: '/timeme_img/TimeMe_MockUp.png'},
+  { to: '/ArchiQuiz', label: 'ArchiQuiz', imgSrc: '/archiquiz_img/ArchiQuiz_MockUp.png'},
+  { to: '/Kagoyume', label: 'Kagoyume', imgSrc: '/kagoyume_img/Kagoyume_MockUp.png'},
+  { to: '/Portfolio', label: 'Portfolio', imgSrc: '/portfolio_img/Portfolio_MockUp.png'},
 ];
 
 const desingLinks = [
-  { to: '/TwitterHeader', label: 'Twitter Header', imgSrc: '/design_works_img/Twitter Account Header（デザイン）.png', style: { height: '130px', width: '250px' } },
-  { to: '/WebSiteMake', label: 'Web Site Make', imgSrc: '/design_works_img/Web制作（デザイン）.png', style: { height: '150px', width: '190px' } },
-  { to: '/LogoMake', label: 'Logo Make', imgSrc: '/design_works_img/ロゴデザイン（デザイン）.png', style: { height: '150px', width: '190px' } },
-  { to: '/BannerAdvertisement', label: 'Banner Advertisement', imgSrc: '/design_works_img/広告バナー（デザイン）.png', style: { height: '150px', width: '190px' } },
+  { to: '/TwitterHeader', label: 'Twitter Header', imgSrc: '/design_works_img/Twitter_Header_MockUp.png'},
+  { to: '/WebSiteMake', label: 'Profile Pic', imgSrc: '/design_works_img/Web_Make_MockUp.png'},
+  { to: '/LogoMake', label: 'Logo Make', imgSrc: '/design_works_img/Logo_Make_MockUp.png'},
+  { to: '/BannerAdvertisement', label: 'Banner Ad', imgSrc: '/design_works_img/Banner_Advertisement_MockUp.png'},
 ];
 
 const Works = () => {
@@ -39,11 +39,11 @@ const Works = () => {
               <div className='title-border'></div>
             </div>
             {applicationLinks.map((link, index) => (
-              <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
+              <div className="col-lg-6 col-md-12 col-xs-12 col-12 my-5">
                 <div className='d-flex justify-content-center align-items-center h-100'>
                   <div key={index} className='work-link-box' onClick={() => handleClick(link.to)}>
                     <div className='work-word'>{link.label}</div>
-                    <img src={link.imgSrc} alt={link.label} style={link.style} />
+                    <img src={link.imgSrc} alt={link.label} style={{ height: '310px', width: '330px' }} />
                   </div>
                 </div>
               </div>
@@ -55,11 +55,11 @@ const Works = () => {
               <div className='title-border'></div>
             </div>
             {desingLinks.map((link, index) => (
-              <div className="col-lg-4 col-md-12 col-xs-12 col-12 my-5">
+              <div className="col-lg-6 col-md-12 col-xs-12 col-12 my-5">
                 <div className='d-flex justify-content-center align-items-center h-100'>
                   <div key={index} className='work-link-box' onClick={() => handleClick(link.to)}>
                     <div className='work-word'>{link.label}</div>
-                    <img src={link.imgSrc} alt={link.label} style={link.style} />
+                    <img src={link.imgSrc} alt={link.label} style={{ height: '310px', width: '330px' }} />
                   </div>
                 </div>
               </div>
