@@ -185,7 +185,7 @@ table tr td:nth-child(2) {
     width: 400px;
   }
 
-  /* 成果物のメイン画像 */
+  /* 成果物のメイン画像（それぞれの作品紹介ページの画像サイズ） */
   .main-img {
     height: 400px;
     width: 700px;
@@ -207,11 +207,17 @@ table tr td:nth-child(2) {
   .work-width {
     margin: 0 18%;
   }
+
+  /* お問い合わせフォームの幅調整 */
+  .form-width {
+    width: 70%;
+    margin: auto;
+  }
 } 
 
 /* 画面が半分の時 */
 @media screen and (min-width: 576px) and (max-width: 991px) {
-  /* 成果物のメイン画像 */
+  /* 成果物のメイン画像（それぞれの作品紹介ページの画像サイズ） */
   .main-img {
     height: 300px;
     width: 550px;
@@ -239,6 +245,12 @@ table tr td:nth-child(2) {
     height: 60px;
     width: 55px;
   }
+
+  /* お問い合わせフォームの幅調整 */
+  .form-width {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 /* 画面がスマホくらいの幅の時 */
@@ -254,7 +266,7 @@ table tr td:nth-child(2) {
     width: 250px;
   }
 
-  /* 成果物のメイン画像 */
+  /* 成果物のメイン画像（それぞれの作品紹介ページの画像サイズ） */
   .main-img {
     height: 170px;
     width: 300px;
@@ -270,6 +282,12 @@ table tr td:nth-child(2) {
   .web-site-make-img {
     height: 200px;
     width: 280px;
+  }
+
+  /* お問い合わせフォームの幅調整 */
+  .form-width {
+    width: 90%;
+    margin: auto;
   }
 }
 
