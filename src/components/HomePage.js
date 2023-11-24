@@ -2,7 +2,7 @@ import React from 'react'
 import Profile from './Profile'
 import Header from './Header'
 import '../App.css';
-import Contact from './Contact';
+// import Contact from './Contact';
 
 const HomePage = () => {
   return (
@@ -12,7 +12,7 @@ const HomePage = () => {
         <div className='custom-container'>
           <Header />
           <Profile />
-          <Contact />
+          {/* <Contact /> */}
         </div>
       </div>
     </div>

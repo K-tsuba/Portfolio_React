@@ -20,6 +20,7 @@ const Header = () => {
           <Nav.Link href="/">HOME</Nav.Link>
           <Nav.Link href="/skills">SKILLS</Nav.Link>
           <Nav.Link href="/works">WORKS</Nav.Link>
+          <Nav.Link href="/contact">CONTACT</Nav.Link>
           {location.pathname === '/' && (
           <Link to="contact" smooth={true} duration={10} className='contact'>CONTACT</Link>
           )}
