@@ -10,9 +10,9 @@ const Contact = () => {
       <div className="container">
         <div className='custom-container'>
           <Header />
-          <div className='py-5'>
+          <div className='py-5 form-width'>
             
-            <form className="form-width" name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required />
