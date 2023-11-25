@@ -162,6 +162,17 @@ table tr td:nth-child(2) {
   width: 70%;
 }
 
+/* HomePage */
+
+/* 実績のhover */
+.work-hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.work-hover:hover {
+  transform: scale(1.1); /* 1.1倍のサイズに拡大 */
+}
+
 
 
 /* 画面を1画面で見る時 */
