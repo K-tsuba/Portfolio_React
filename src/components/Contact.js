@@ -12,7 +12,7 @@ const Contact = () => {
           <Header />
           <div className='py-5 form-width'>
             
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" action="/dummy_thanks.html">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required />
