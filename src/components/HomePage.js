@@ -40,7 +40,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className='text-center me-3 mt-2'>
-              <a href="/works" class="btn btn-secondary">View All >></a>
+              <a href="/works" class="btn btn-secondary">View All ＞＞</a>
             </div>
           </div>
           <div className="col-12 text-center mb-3">
