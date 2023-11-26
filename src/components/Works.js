@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 
 const applicationLinks = [
   { to: '/TimeMe', label: 'TimeMe', imgSrc: '/timeme_img/TimeMe_MockUp.png'},
@@ -67,6 +68,7 @@ const Works = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

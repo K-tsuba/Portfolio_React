@@ -162,6 +162,23 @@ table tr td:nth-child(2) {
   width: 70%;
 }
 
+/* HomePage */
+
+/* 実績のhover */
+.work-hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.work-hover:hover {
+  transform: scale(1.1); /* 1.1倍のサイズに拡大 */
+}
+
+/* Footer */
+
+.footer-back {
+  background-color: #DDE6ED; 
+}
+
 
 
 /* 画面を1画面で見る時 */
@@ -212,6 +229,11 @@ table tr td:nth-child(2) {
   .form-width {
     width: 70%;
     margin: auto;
+  }
+
+  /* footerの幅を調整 */
+  .footer-container {
+    margin: 0 150px;
   }
 } 
 
@@ -288,6 +310,11 @@ table tr td:nth-child(2) {
   .form-width {
     width: 90%;
     margin: auto;
+  }
+
+  /* footerの幅を調整 */
+  .footer-container {
+    margin: 0 30px;
   }
 }
 

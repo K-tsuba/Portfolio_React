@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import '../App.css';
+import Footer from './Footer';
 
 const Skill = () => {
   return (
@@ -228,6 +229,7 @@ const Skill = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -12,6 +12,7 @@ import TwitterHeader from './components/TwitterHeader';
 import WebSiteMake from './components/WebSiteMake';
 import LogoMake from './components/LogoMake';
 import BannerAdvertisement from './components/BannerAdvertisement';
+import Thanks from './components/Thanks';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/LogoMake" element={<LogoMake />} />
           <Route path="/BannerAdvertisement" element={<BannerAdvertisement />} />
           <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/thanks" element={<Thanks />} />
         </Routes>
       </div>
     </Router>
