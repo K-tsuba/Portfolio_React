@@ -43,13 +43,6 @@ const HomePage = () => {
               <a href="/works" class="btn btn-secondary">View All ＞＞</a>
             </div>
           </div>
-          <div className="col-12 text-center mb-3">
-            <h3 className='mt-4'>SKILLS</h3>
-            <div className='title-border'></div>
-          </div>
-          <div className='work-width py-5'>
-            
-          </div>
         </div>
       </div>
     </div>
